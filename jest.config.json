@@ -1,0 +1,26 @@
+{
+  "collectCoverageFrom": [
+    "<rootDir>/packages/*/src/**/*.{js,jsx,ts,tsx}",
+    "!<rootDir>/packages/*/src/index.{js,jsx,ts,tsx}",
+    "!<rootDir>/packages/*/src/**/*.stories.{js,jsx,ts,tsx}"
+  ],
+  "coverageThreshold": {
+    "global": {
+      "branches": 80,
+      "functions": 80,
+      "lines": 80,
+      "statements": -10
+    }
+  },
+  "moduleNameMapper": {
+    "^.+\\.(css|less|scss|sass)$": "<rootDir>/node_modules/identity-obj-proxy"
+  },
+  "roots": ["<rootDir>/packages"],
+  "testMatch": ["**/*.test.+(js|jsx|ts|tsx)"],
+  "testPathIgnorePatterns": ["<rootDir>/node_modules/"],
+  "transform": {
+    "^.+\\.jsx?$": "<rootDir>/node_modules/babel-jest",
+    "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest"
+  },
+  "verbose": true
+}
