@@ -1,5 +1,5 @@
 import { FunctionComponent, ReactElement } from 'react';
-import { greet } from '@your-scope/core';
+import { greet } from '@open-colleges/core';
 import './component.scss';
 
 interface ComponentInterface {

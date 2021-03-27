@@ -10,7 +10,7 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "paths": {
-      "@your-scope/*": ["packages/*/src"]
+      "@open-colleges/*": ["packages/*/src"]
     }
   },
   "exclude": ["node_modules", "dist"]

@@ -1,5 +1,5 @@
 {
-  "name": "@your-scope/component",
+  "name": "@open-colleges/component",
   "version": "1.0.0",
   "description": "Monorepo starter component",
   "homepage": "https://github.com/username/monorepo-starter#readme",
@@ -21,7 +21,7 @@
     "build": "webpack --config ../../webpack.config.js"
   },
   "dependencies": {
-    "@your-scope/core": "^1.0.0"
+    "@open-colleges/core": "^1.0.0"
   },
   "peerDependencies": {
     "prop-types": "^15.7.2",

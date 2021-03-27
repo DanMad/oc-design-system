@@ -1,9 +1,9 @@
-@import '@your-scope/core/src/core';
+@import '@open-colleges/core/src/core';
 
 .text {
-  color: red;
+  color: #f00;
 
   &.with-name {
-    color: blue;
+    color: #00f;
   }
 }
