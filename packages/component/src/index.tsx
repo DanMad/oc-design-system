@@ -1,3 +1,3 @@
-import Component from './component';
+import Component from './ts/component';
 
 export default Component;
