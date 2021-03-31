@@ -6,6 +6,9 @@ const ROOT = path.resolve(__dirname, '../');
 const NODE_MODULES = path.resolve(ROOT, 'node_modules');
 
 module.exports = {
+  "core": {
+    "builder": "webpack5",
+  },
   "stories": [
     "../packages/**/*.stories.mdx",
     "../packages/**/*.stories.@(js|jsx|ts|tsx)"
