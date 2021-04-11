@@ -20,6 +20,9 @@
   "scripts": {
     "build": "webpack --config ../../webpack.config.js"
   },
+  "devDependencies": {
+    "@open-colleges/core": "^1.0.0"
+  },
   "peerDependencies": {
     "@open-colleges/core": "^1.0.0",
     "react": "^17.0.2",
