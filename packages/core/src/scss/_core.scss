@@ -1,8 +1,9 @@
 // @import 'functions';
-// @import 'variables';
+@import '../js/tokens.js';
 // @import 'mixins';
 
 body {
+  background-color: $color-brand-primary;
   display: flex;
   font-family: 'Arial', 'Helvetica', 'sans-serif';
   margin: 0;
