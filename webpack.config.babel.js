@@ -1,3 +1,4 @@
+const jsonImporter = require('node-sass-json-importer');
 const babel = require('./babel.config.json');
 
 module.exports = {
@@ -7,7 +8,21 @@ module.exports = {
       {
         exclude: /node_modules/,
         test: /\.(scss)$/,
-        use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
+        use: [
+          'style-loader',
+          'css-loader',
+          'postcss-loader',
+          {
+            loader: 'sass-loader',
+            options: {
+              sassOptions: {
+                importer: jsonImporter({
+                  convertCase: true,
+                }),
+              },
+            },
+          },
+        ],
       },
       {
         test: /\.jsx?/,

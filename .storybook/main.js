@@ -1,6 +1,8 @@
+require('@babel/register');
 const glob = require('glob');
 const path = require('path');
-const webpackConfig = require('../webpack.config.js');
+const jsonImporter = require('node-sass-json-importer');
+const webpackConfig = require('../webpack.config.babel.js');
 
 const ROOT = path.resolve(__dirname, '../');
 const NODE_MODULES = path.resolve(ROOT, 'node_modules');
@@ -18,16 +20,24 @@ module.exports = {
     "@storybook/addon-essentials"
   ],
   webpackFinal: async (config, { configType }) => {
+    config.module.rules = webpackConfig.module.rules.filter(
+      f => f.test.toString() !== '/\\.(scss)$/'
+    );
+
     config.module.rules.push({
       test: /\.(scss)$/,
       use: [
         'style-loader',
         'css-loader',
+        'postcss-loader',
         {
           loader: "sass-loader",
           options: {
             sassOptions: {
-              includePaths: [NODE_MODULES]
+              includePaths: [NODE_MODULES],
+              importer: jsonImporter({
+                convertCase: true,
+              }),
             }
           }
         }
