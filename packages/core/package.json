@@ -19,7 +19,7 @@
     "src/**/*.scss"
   ],
   "scripts": {
-    "build": "webpack --config ../../webpack.config.babel.js"
+    "build": "webpack --config ../../webpack.config.babel.ts"
   },
   "peerDependencies": {
     "react": "^17.0.2",

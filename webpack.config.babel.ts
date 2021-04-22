@@ -1,4 +1,4 @@
-const jsonImporter = require('node-sass-json-importer');
+const tokenImporter = require('node-sass-token-importer');
 const babel = require('./babel.config.json');
 
 module.exports = {
@@ -16,7 +16,7 @@ module.exports = {
             loader: 'sass-loader',
             options: {
               sassOptions: {
-                importer: jsonImporter({
+                importer: tokenImporter({
                   convertCase: true,
                 }),
               },
