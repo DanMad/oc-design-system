@@ -1,0 +1,9 @@
+@import '@open-colleges/core/src/scss/core';
+
+.text {
+  color: #f00;
+
+  &.with-name {
+    color: #00f;
+  }
+}
