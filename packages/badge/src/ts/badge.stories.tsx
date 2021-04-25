@@ -1,13 +1,13 @@
 import { ReactElement } from 'react';
-import FirstComponent from './component';
+import Badge from './badge';
 
 export default {
-  title: 'Component',
-  component: FirstComponent,
+  title: 'Badge',
+  component: Badge,
 };
 
 export const WithChild = (): ReactElement => (
-  <FirstComponent>
+  <Badge>
     <p>Hello components!</p>
-  </FirstComponent>
+  </Badge>
 );

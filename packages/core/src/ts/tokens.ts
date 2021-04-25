@@ -19,7 +19,7 @@ const colorCharcoalTransparent = 'rgba(0, 0, 0, 0.89)';
 const colorGunmetal = 'rgb(115, 115, 115)';
 const colorGunmetalTransparent = 'rgba(0, 0, 0, 0.55)';
 const colorHurricane = 'rgb(168, 168, 168)';
-const colorHurricanetransparent = 'rgba(0, 0, 0, 0.34)';
+const colorHurricaneTransparent = 'rgba(0, 0, 0, 0.34)';
 const colorFossil = 'rgb(201, 201, 201)';
 const colorFossilTransparent = 'rgba(0, 0, 0, 0.21)';
 const colorAlto = 'rgb(222, 222, 222)';
@@ -81,10 +81,10 @@ const tokens: Record<string, string> = {
   borderRadiusS,
   borderRadiusM,
   borderRadiusL,
-  boxShadow1,
-  boxShadow2,
-  boxShadow3,
-  boxShadow4,
+  // boxShadow1,
+  // boxShadow2,
+  // boxShadow3,
+  // boxShadow4,
   colorAlabaster,
   colorAlto,
   colorAltoTransparent,
@@ -114,16 +114,16 @@ const tokens: Record<string, string> = {
   colorGunmetal,
   colorGunmetalTransparent,
   colorHurricane,
-  colorHurricanetransparent,
+  colorHurricaneTransparent,
   colorPowder,
   colorPowderTransparent,
   colorSaddle,
   colorViking,
   colorVikingShade,
   colorVikingTint,
-  fontFamilyCondensed,
-  fontFamilyMonospace,
-  fontFamilySansSerif,
+  // fontFamilyCondensed,
+  // fontFamilyMonospace,
+  // fontFamilySansSerif,
   spaceL,
   spaceM,
   spaceS,
@@ -185,7 +185,7 @@ export {
   colorGunmetal,
   colorGunmetalTransparent,
   colorHurricane,
-  colorHurricanetransparent,
+  colorHurricaneTransparent,
   colorPowder,
   colorPowderTransparent,
   colorSaddle,
@@ -202,7 +202,7 @@ export {
   spaceXl,
   spaceXxs,
   spaceXxl,
-  tokens as default,
+  tokens,
   transitionDuration0,
   transitionDuration1,
   transitionDuration2,

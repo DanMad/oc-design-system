@@ -1,5 +1,5 @@
 import { render, cleanup } from '@testing-library/react';
-import FirstComponent from './component';
+import FirstComponent from './badge';
 
 describe('FirstComponent component', () => {
   let textTag: HTMLParagraphElement | null = null;
