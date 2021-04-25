@@ -1,9 +1,44 @@
-@import '@open-colleges/core/src/scss/core';
+// Table of Contents
+//
+// 1 Pattern outline
+// 2 Imports
+// 3 TBD
 
-.text {
-  color: #f00;
+// 1 Pattern outline
+// =============================================================================
 
-  &.with-name {
-    color: #00f;
-  }
+// .badge
+
+// 2 Imports
+// =============================================================================
+
+@import '~sass-rem';
+@import '@open-colleges/core/src/ts/namespace.ts';
+@import '@open-colleges/core/src/ts/tokens.ts';
+
+// 3 TBD
+// =============================================================================
+
+.#{$namespace}-badge {
+  background-color: $hurricane-transparent;
+  border-radius: rem(12px);
+  color: $blizzard;
+  display: inline-block;
+  font-size: rem(11px);
+  font-weight: 700;
+  height: $space-l;
+  line-height: $space-m;
+  min-width: $space-xs;
+  padding-left: $space-xs;
+  padding-right: $space-xs;
+  text-align: center;
+  user-select: none;
+}
+
+.#{$namespace}-badge--error {
+  background-color: $cinnabar;
+}
+
+.#{$namespace}-badge--success {
+  background-color: $christi;
 }

@@ -1,18 +1,17 @@
 {
-  "name": "@open-colleges/component",
+  "name": "@open-colleges/badge",
   "version": "1.0.0",
-  "description": "Monorepo starter component",
-  "homepage": "https://github.com/username/monorepo-starter#readme",
+  "description": "Open Colleges' Badge component",
+  "homepage": "https://github.com/DanMad/oc-design-system#readme",
   "bugs": {
-    "url": "https://github.com/username/monorepo-starter/issues"
+    "url": "https://github.com/DanMad/oc-design-system/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/username/monorepo-starter.git",
-    "directory": "packages/component"
+    "url": "git+https://github.com/DanMad/oc-design-system.git",
+    "directory": "packages/badge"
   },
   "license": "MIT",
-  "author": "Your name",
   "main": "dist/index.js",
   "files": [
     "dist/**/*"
@@ -21,7 +20,8 @@
     "build": "webpack --config ../../webpack.config.babel.ts"
   },
   "devDependencies": {
-    "@open-colleges/core": "^1.0.0"
+    "@open-colleges/core": "^1.0.0",
+    "sass-rem": "^2.0.1"
   },
   "peerDependencies": {
     "@open-colleges/core": "^1.0.0",

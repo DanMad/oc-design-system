@@ -66,6 +66,7 @@
     "rimraf": "^3.0.2",
     "sass": "^1.32.11",
     "sass-loader": "11.0.1",
+    "sass-rem": "^2.0.1",
     "sort-package-json": "^1.46.1",
     "style-loader": "^2.0.0",
     "stylelint": "^13.10.0",
