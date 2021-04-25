@@ -1,3 +1,3 @@
 const namespace = 'oc';
 
-export { namespace as default, namespace as ns };
+export { namespace as default };

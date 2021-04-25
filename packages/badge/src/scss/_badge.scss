@@ -13,13 +13,13 @@
 // =============================================================================
 
 @import '~sass-rem';
-@import '../../../core/src/ts/namespace.ts';
-@import '../../../core/src/ts/tokens.ts';
+@import '@open-colleges/core/src/ts/namespace.ts';
+@import '@open-colleges/core/src/ts/tokens.ts';
 
 // 3 TBD
 // =============================================================================
 
-.#{$ns}-badge {
+.#{$namespace}-badge {
   background-color: $color-hurricane-transparent;
   border-radius: rem(12px);
   color: $color-blizzard;
@@ -35,10 +35,10 @@
   user-select: none;
 }
 
-.#{$ns}-badge--error {
+.#{$namespace}-badge--error {
   background-color: $color-cinnabar;
 }
 
-.#{$ns}-badge--success {
+.#{$namespace}-badge--success {
   background-color: $color-christi;
 }

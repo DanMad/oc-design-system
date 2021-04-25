@@ -11781,11 +11781,12 @@ node-releases@^1.1.70:
   resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.1.71.tgz#cb1334b179896b1c89ecfdd4b725fb7bbdfc7dbb"
   integrity sha512-zR6HoT6LrLCRBwukmrVbHv0EpEQjksO6GmFcZQQuCAy139BEsoVKPYnf3jongYW83fAa1torLGYwxxky/p28sg==
 
-node-sass-token-importer@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/node-sass-token-importer/-/node-sass-token-importer-1.0.0.tgz#58831122c60033fbf7b576b531acda3bfcd3826a"
-  integrity sha512-ZJFJ1Mb3Bc7mwFi7VJ2SgkdGGdVkC6vFm4pUMyEky9p4ZK47eJ5+cJJbtU8j4ukycRwgSkzmbgw4gLNXFKVxlA==
+node-sass-token-importer@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/node-sass-token-importer/-/node-sass-token-importer-1.0.3.tgz#4134f4d410cb74d7972373152fa8b1981943af02"
+  integrity sha512-OVqYOAUoML3N/ACQzdnE6qRkZzg8dIweqpNL1XaZi5oCZoi74jRWbLsF8c5OHhQH9K/tSzhibhKgrEmyiOFgzw==
   dependencies:
+    "@babel/register" "^7.13.16"
     is-there "^4.5.1"
     json5 "^2.2.0"
     lodash "^4.17.21"
