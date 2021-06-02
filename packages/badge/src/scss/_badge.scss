@@ -24,10 +24,11 @@
   border-radius: rem(12px);
   color: $color-blizzard;
   display: inline-block;
+  font-family: $font-family-sans-serif;
   font-size: rem(11px);
   font-weight: 700;
-  height: $space-l;
   line-height: $space-m;
+  // height: $space-l;
   min-width: $space-xs;
   padding-left: $space-xs;
   padding-right: $space-xs;

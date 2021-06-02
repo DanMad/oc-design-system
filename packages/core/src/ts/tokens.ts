@@ -42,23 +42,23 @@ const fontFamilyCondensed =
   '"Open Sans Condensed", Helvetica, Arial, sans-serif';
 const fontFamilyMonospace = '"Inconsolata", Menlo, Consolas, monospace';
 
-const spaceXxs = 'rem(4px)';
-const spaceXs = 'rem(8px)';
-const spaceS = 'rem(16px)';
-const spaceM = 'rem(24px)';
-const spaceL = 'rem(40px)';
-const spaceXl = 'rem(64px)';
-const spaceXxl = 'rem(104px)';
+const spaceXxs = '0.25rem';
+const spaceXs = '0.5rem';
+const spaceS = '1rem';
+const spaceM = '1.5rem';
+const spaceL = '2.5rem';
+const spaceXl = '4rem';
+const spaceXxl = '6.5rem';
 
-const borderRadiusS = 'rem(2px)';
-const borderRadiusM = 'rem(4px)';
-const borderRadiusL = 'rem(8px)';
+const borderRadiusS = '0.125rem';
+const borderRadiusM = '0.25rem';
+const borderRadiusL = '0.5rem';
 
-const _boxShadowForeground = `rem(2px -2px 2px -2px) rgba(${colorCinnabarShade}, 0.05)`;
-const boxShadow1 = `${_boxShadowForeground}, 0 rem(4px 4px -2px) rgba(${colorSaddle}, 0.21)`;
-const boxShadow2 = `${_boxShadowForeground}, 0 rem(8px 8px -4px) rgba(${colorSaddle}, 0.21)`;
-const boxShadow3 = `${_boxShadowForeground}, 0 rem(16px 16px -4px) rgba(${colorSaddle}, 0.13)`;
-const boxShadow4 = `${_boxShadowForeground}, 0 rem(24px 24px -4px) rgba(${colorSaddle}, 0.08)`;
+const _boxShadowForeground = `0.125rem -0.125rem 0.125rem -0.125rem rgba(${colorCinnabarShade}, 0.05)`;
+const boxShadow1 = `${_boxShadowForeground}, 0 0.25rem 0.25rem -0.125rem rgba(${colorSaddle}, 0.21)`;
+const boxShadow2 = `${_boxShadowForeground}, 0 0.5rem 0.5rem -0.25rem rgba(${colorSaddle}, 0.21)`;
+const boxShadow3 = `${_boxShadowForeground}, 0 1rem 1rem -0.25rem rgba(${colorSaddle}, 0.13)`;
+const boxShadow4 = `${_boxShadowForeground}, 0 1.5rem 1.5rem -0.25rem rgba(${colorSaddle}, 0.08)`;
 
 const transitionDuration0 = '0ms';
 const transitionDuration1 = '125ms';
@@ -77,7 +77,7 @@ const transitionDuration12 = '1500ms';
 const transitionTimingSmooth = 'ease-in-out';
 const transitionTimingBounceOut = 'cubic-bezier(0.6, 0, 0.5, 1.4)';
 
-const tokens: Record<string, string> = {
+const tokens: Record<string, string | string[]> = {
   borderRadiusS,
   borderRadiusM,
   borderRadiusL,

@@ -1,3 +1,3 @@
-import Component from './ts/badge';
+import Badge from './ts/badge';
 
-export default Component;
+export default Badge;
