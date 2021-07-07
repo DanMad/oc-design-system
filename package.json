@@ -8,13 +8,12 @@
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
     "build": "lerna exec -- rimraf dist && lerna exec -- yarn build",
+    "build-storybook": "build-storybook",
     "sort-packages": "sort-package-json && lerna exec -- sort-package-json",
+    "storybook": "start-storybook -p 6006",
     "test": "jest",
     "test:coverage": "jest --coverage --colors",
-    "test:watch": "jest --watch",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "prepare": "husky install"
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "@babel/runtime": "^7.14.0",
