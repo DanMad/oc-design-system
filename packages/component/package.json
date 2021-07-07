@@ -1,18 +1,16 @@
 {
   "name": "@open-colleges/component",
   "version": "1.0.0",
-  "description": "Monorepo starter component",
-  "homepage": "https://github.com/username/monorepo-starter#readme",
-  "bugs": {
-    "url": "https://github.com/username/monorepo-starter/issues"
-  },
+  "description": "Open Colleges' Component component",
+  "homepage": "https://github.com/DanMad/oc-design-system#readme",
+  "bugs": "https://github.com/DanMad/oc-design-system/issues",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/username/monorepo-starter.git",
+    "url": "https://github.com/DanMad/oc-design-system.git",
     "directory": "packages/component"
   },
   "license": "MIT",
-  "author": "Your name",
+  "author": "Andrea Malvetta",
   "main": "dist/index.js",
   "files": [
     "dist/**/*"

@@ -1,5 +1,5 @@
 {
-  "name": "monorepo-starter",
+  "name": "root",
   "private": true,
   "license": "MIT",
   "workspaces": [

@@ -3,15 +3,14 @@
   "version": "1.0.0",
   "description": "Open Colleges' Badge component",
   "homepage": "https://github.com/DanMad/oc-design-system#readme",
-  "bugs": {
-    "url": "https://github.com/DanMad/oc-design-system/issues"
-  },
+  "bugs": "https://github.com/DanMad/oc-design-system/issues",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DanMad/oc-design-system.git",
+    "url": "https://github.com/DanMad/oc-design-system.git",
     "directory": "packages/badge"
   },
   "license": "MIT",
+  "author": "DanMad",
   "main": "dist/index.js",
   "files": [
     "dist/**/*"
