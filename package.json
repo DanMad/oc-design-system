@@ -7,10 +7,9 @@
   ],
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
-    "build": "lerna exec -- rimraf dist && lerna exec -- yarn build",
-    "build-storybook": "build-storybook",
-    "sort-packages": "sort-package-json && lerna exec -- sort-package-json",
-    "storybook": "start-storybook -p 6006",
+    "build": "lerna exec -- rm -rf dist/** && lerna exec -- yarn build",
+    "build:storybook": "build-storybook",
+    "storybook": "start-storybook -p 3001",
     "test": "jest",
     "test:coverage": "jest --coverage --colors",
     "test:watch": "jest --watch"
@@ -64,7 +63,6 @@
     "prettier": "^2.3.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "rimraf": "^3.0.2",
     "sass": "^1.32.13",
     "sass-loader": "11.1.1",
     "sass-rem": "^2.0.1",
