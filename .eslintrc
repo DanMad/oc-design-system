@@ -17,18 +17,23 @@
       "jsx": true
     },
     "ecmaVersion": 11,
-    "sourceType": "module",
-    "project": "./tsconfig.json"
+    "project": "./tsconfig.json",
+    "sourceType": "module"
   },
-  "plugins": ["@babel", "react"],
+  "plugins": [
+    "@babel",
+    "react"
+  ],
   "rules": {
-    "react/prop-types": "off",
     "react/jsx-uses-react": "off",
+    "react/prop-types": "off",
     "react/react-in-jsx-scope": "off"
   },
   "overrides": [
     {
-      "files": ["./packages/**/*.test.*"],
+      "files": [
+        "./packages/**/*.test.*"
+      ],
       "rules": {
         "import/no-extraneous-dependencies": "off"
       }
