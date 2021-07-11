@@ -1,11 +1,12 @@
 # Dependencies
-node_modules
+node_modules/
 
-# Distributed version
-dist
+# Distribution directories
+dist/
 
-# MacOS
-.DS_Store
+# Hidden directories
+.*/**
+!.storybook/**
 
-# Webpack config
+# Webpack configuration
 webpack.config.babel.ts

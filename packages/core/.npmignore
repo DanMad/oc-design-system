@@ -1,5 +1,6 @@
-# Source code
-src
+# Config files
+*.config.*
+.tsconfig.*
 
-# Typescript config file
-tsconfig.json
+# Source directory
+src/
