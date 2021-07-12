@@ -16,6 +16,7 @@
     "^.+\\.(css|less|scss|sass)$": "<rootDir>/node_modules/identity-obj-proxy"
   },
   "roots": ["<rootDir>/packages"],
+  "testEnvironment": "jsdom",
   "testMatch": ["**/*.test.+(js|jsx|ts|tsx)"],
   "testPathIgnorePatterns": ["<rootDir>/node_modules/"],
   "transform": {
