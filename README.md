@@ -18,7 +18,7 @@ To build your entire project, execute `yarn build`. To build CSS or JavaScript s
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/DanMad/monorepo-starter/blob/master/CONTRIBUTING.md).
+See [CONTRIBUTING.md](https://github.com/DanMad/oc-design-system/blob/main/CONTRIBUTING.md).
 
 ## Additional information
 
