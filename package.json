@@ -10,6 +10,7 @@
     "bootstrap": "yarn install && husky install && chmod +x .husky/* && lerna bootstrap --use-workspaces",
     "build": "lerna exec -- rm -rf dist && lerna exec -- yarn build",
     "build:storybook": "build-storybook",
+    "format": "sort-package-json && lerna exec -- sort-package-json && prettier --write \"**/*\"",
     "storybook": "start-storybook -p 3001",
     "test": "jest",
     "test:coverage": "jest --coverage --colors",
