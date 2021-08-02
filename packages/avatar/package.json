@@ -10,7 +10,7 @@
     "directory": "packages/avatar"
   },
   "license": "MIT",
-  "author": "Andrea Malvetta",
+  "author": "DanMad",
   "main": "dist/index.js",
   "files": [
     "dist/**/*"
