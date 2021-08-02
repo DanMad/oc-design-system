@@ -24,4 +24,5 @@ jobs:
       - run: rm -rf node_modules
       - run: npm install --global yarn
       - run: yarn install --frozen-lockfile
+      - run: lerna bootstrap --use-workspaces
       - run: yarn test
