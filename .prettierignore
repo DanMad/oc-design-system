@@ -9,6 +9,7 @@ dist/
 
 # Hidden directories
 .*/**
+!.github/workflows/**
 !.storybook/**
 
 # Ignore files
