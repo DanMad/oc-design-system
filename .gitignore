@@ -1,14 +1,15 @@
+# Coverage directory
+coverage/
+
 # Dependencies
-node_modules
+node_modules/
 
-# Distributed version
-dist
+# Distribution directories
+dist/
 
-# Jest coverage
-coverage
-
-# Logs
+# Log files
 *.log
 
-# MacOS
+# Operating System
 .DS_Store
+Thumbs.db

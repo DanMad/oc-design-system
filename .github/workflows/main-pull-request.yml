@@ -1,0 +1,30 @@
+---
+
+name: Pull Request (main)
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  unit_tests:
+    name: Unit Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          submodules: recursive
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 'lts/fermium'
+      - run: rm -rf node_modules
+      - run: npm install --global yarn
+      - run: yarn install --frozen-lockfile
+      - run: yarn build
+      - run: lerna bootstrap --use-workspaces
+      - run: yarn test

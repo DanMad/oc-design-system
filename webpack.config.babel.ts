@@ -19,6 +19,7 @@ module.exports = {
                 importer: tokenImporter({
                   convertCase: true,
                 }),
+                includePaths: ['../../node_modules'],
               },
             },
           },
