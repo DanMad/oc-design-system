@@ -16,17 +16,14 @@ jobs:
     name: Create NPM Release
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-        with:
-          ref: ${{ github.event.pull_request.head.ref }}
-      - uses: actions/setup-node@v2
-        with:
-          node-version: 'lts/fermium'
-      - run: rm -rf node_modules
-      - run: npm install --global yarn
-      - run: yarn install --frozen-lockfile
-      - run: yarn build
-      - run: lerna bootstrap --use-workspaces
-      - run: echo //registry.npmjs.org/:_authToken=${NPM_AUTH_TOKEN} > .npmrc
-      - run: lerna publish from-package --no-verify-access --yes
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
+    - run: |
+        rm -rf node_modules
+        npm install --global yarn
+        yarn install --frozen-lockfile
+        yarn build
+        lerna bootstrap --use-workspaces
+        echo //registry.npmjs.org/:_authToken=${NPM_AUTH_TOKEN} > .npmrc
+        lerna publish from-package --no-verify-access --yes
 
