@@ -8,7 +8,7 @@ env:
 on:
   pull_request:
     branches:
-      - main
+    - main
 
 jobs:
   unit_tests:
@@ -18,9 +18,7 @@ jobs:
     - uses: actions/checkout@v2
     - uses: actions/setup-node@v2
     - run: |
-        rm -rf node_modules
         npm install --global yarn
-        yarn install --frozen-lockfile
+        yarn bootstrap-frozen
         yarn build
-        lerna bootstrap --use-workspaces
         yarn test

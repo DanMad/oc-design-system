@@ -8,13 +8,11 @@
   ],
   "scripts": {
     "bootstrap": "rm -rf node_modules && yarn install && husky install && chmod +x .husky/* && lerna bootstrap --use-workspaces",
+    "bootstrap-frozen": "rm -rf node_modules && yarn install --frozen-lockfile && husky install && chmod +x .husky/* && lerna bootstrap --use-workspaces",
     "build": "lerna exec -- rm -rf dist && lerna exec -- yarn build",
-    "build:storybook": "build-storybook",
     "format": "sort-package-json && lerna exec -- sort-package-json && prettier --write \"**/*\"",
-    "start:storybook": "start-storybook -p 3001",
     "test": "jest",
-    "test:coverage": "jest --coverage --colors",
-    "test:watch": "jest --watch"
+    "test-coverage": "jest --coverage --colors"
   },
   "dependencies": {
     "@babel/runtime": "^7.14.8",

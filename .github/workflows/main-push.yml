@@ -9,7 +9,7 @@ env:
 on:
   push:
     branches:
-      - main
+    - main
 
 jobs:
   create_npm_release:
@@ -19,11 +19,9 @@ jobs:
     - uses: actions/checkout@v2
     - uses: actions/setup-node@v2
     - run: |
-        rm -rf node_modules
         npm install --global yarn
-        yarn install --frozen-lockfile
+        yarn bootstrap-frozen
         yarn build
-        lerna bootstrap --use-workspaces
-        echo //registry.npmjs.org/:_authToken=${NPM_AUTH_TOKEN} > .npmrc
+        chmod +x .github/scripts/write-npmrc.sh
+        .github/scripts/write-npmrc.sh
         lerna publish from-package --no-verify-access --yes
-
