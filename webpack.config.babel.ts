@@ -1,7 +1,8 @@
-const tokenImporter = require('node-sass-token-importer');
-const babel = require('./babel.config.json');
+// @ts-ignore | This module needs types declared
+import tokenImporter from 'node-sass-token-importer';
+import babel from './babel.config.json';
 
-module.exports = {
+export default {
   devtool: 'source-map',
   module: {
     rules: [
