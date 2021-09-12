@@ -2,7 +2,7 @@
 import tokenImporter from 'node-sass-token-importer';
 import babel from './babel.config.json';
 
-export default {
+const webpackConfig = {
   devtool: 'source-map',
   module: {
     rules: [
@@ -58,3 +58,5 @@ export default {
     'react-dom': 'react-dom',
   },
 };
+
+export { webpackConfig as default };
