@@ -2,19 +2,23 @@
 
 ## Prerequisites
 
-To successfully build the Monorepo Starter template you will need to have previously installed [NVM](https://github.com/nvm-sh/nvm#installing-and-updating) and [Yarn](https://yarnpkg.com/getting-started/install).
+To work with this repo you will need to install [Yarn](https://yarnpkg.com/getting-started/install) on your local machine.
 
 ## Getting started
 
-To get started, you will need to execute the following commands at the root directory of your instance of `monorepo-starter`.
+To get started, clone this repo on your local machine and run the following command from its root directory:
 
-1. Ensure you're running the correct version of Node.js (`v12.13.0`) by executing `nvm install`.
-2. Install all of the necessary dependencies by executing `yarn install`.
-3. Create dependency links between your packages by executing `yarn bootstrap`.
+```
+$ yarn bootstrap
+```
 
 ## Building
 
-To build your entire project, execute `yarn build`. To build CSS or JavaScript separately, execute `yarn build:css` or `yarn:build:js` respectively.
+To build this repo, run the following command from its root directory:
+
+```
+$ yarn build
+```
 
 ## Issues
 
