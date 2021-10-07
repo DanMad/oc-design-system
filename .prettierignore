@@ -7,13 +7,10 @@ node_modules/
 # Distribution directories
 dist/
 
-# Hidden directories
-.*/**
+# Hidden directories and files
+.*
 !.github/workflows/**
 !.storybook/**
-
-# Ignore files
-.*ignore
 
 # License
 LICENSE
@@ -22,11 +19,7 @@ LICENSE
 *.log
 
 # Operating System
-.DS_Store
 Thumbs.db
 
 # Package files
 yarn.lock
-
-# Run Command files
-.*rc
