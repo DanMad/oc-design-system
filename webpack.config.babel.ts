@@ -2,7 +2,7 @@
 import tokenImporter from 'node-sass-token-importer';
 import babel from './babel.config.json';
 
-const webpackConfig = {
+const config = {
   devtool: 'source-map',
   module: {
     rules: [
@@ -10,7 +10,10 @@ const webpackConfig = {
         exclude: /node_modules/,
         test: /\.(scss)$/,
         use: [
-          'style-loader',
+          {
+            loader: 'style-loader',
+            options: { injectType: 'singletonStyleTag' },
+          },
           'css-loader',
           'postcss-loader',
           {
@@ -59,4 +62,4 @@ const webpackConfig = {
   },
 };
 
-export { webpackConfig as default };
+export { config as default };
